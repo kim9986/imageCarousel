@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>nick getBase64</title>
+  <link href="css/imageCarousel.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="test"  style="height:300px;width:350px;"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/imgcarousel.js"></script>
+<script>
+	var images = [
+		{title:"pic1",path:"images/1.jpg"},
+		{title:"pic2",path:"images/2.jpg"},
+		{title:"pic3",path:"images/3.jpg"},
+		{title:"pic4",path:"images/4.jpg"}	];
+	var options = {
+		autoSlide:true,
+			//alwaysShowTitle:false,
+		clickImage:function(e,index){
+				alert(index);	
+			}
+		      }
+	$("#test").imageCarousel(images,options);
+</script>
+</body>
+</html>
